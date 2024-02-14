@@ -1,17 +1,6 @@
-"use client";
+import { redirect } from "next/navigation";
 
-import { trpc } from "@client/utils/trpc";
-
-const Home = () => {
-  const { data, isLoading, isFetching } = trpc.hello.useQuery({ name: "Bob" });
-
-  if (isLoading || isFetching || !data) return <p>Loading...</p>;
-
-  return (
-    <div className="text-xl font-bold">
-      <h1>{data.greeting}</h1>
-    </div>
-  );
-};
-
-export default Home;
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect("/en");
+}

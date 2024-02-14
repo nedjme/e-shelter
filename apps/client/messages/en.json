@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "greeting": "Hello world!"
+  },
+  "Languages": {
+    "select a language": "Select a language",
+    "en": "English",
+    "fr": "French"
+  }
+}

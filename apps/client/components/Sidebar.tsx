@@ -11,6 +11,7 @@ import {
 } from "@client/components/ui/command";
 
 import UserCard from "./UserCard";
+import { useTranslations } from "next-intl";
 
 type Props = {};
 
@@ -18,16 +19,19 @@ type MenuItem = { link: Pathname; icon: React.ElementType; text: string };
 
 export function Sidebar(props: Props) {
   const router = useRouter();
+  const t = useTranslations();
 
   const menuItems: MenuItem[] = [
-    { link: "/dashboard", icon: LayoutDashboard, text: "Dashboard" },
-    { link: "/records", icon: Library, text: "Records" },
+    { link: "/dashboard", icon: LayoutDashboard, text: t("dashboard") },
+    { link: "/records", icon: Library, text: t("records") },
   ];
 
   return (
-    <div className="w-[300px] min-h-screen border shadow-md flex flex-col gap-2 pt-4">
-      <UserCard />
-      <Command>
+    <div className="w-[300px] h-full shadow-md flex flex-col gap-2 pt-4 px-2 bg-[#2c3c54]">
+      <div className="mb-2">
+        <UserCard />
+      </div>
+      <Command className="h-fit">
         <CommandList>
           {menuItems.map((item) => (
             <CommandItem

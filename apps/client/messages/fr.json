@@ -1,10 +1,8 @@
 {
-  "Home": {
-    "greeting": "Bonjour le monde!"
-  },
-  "Languages": {
-    "select a language": "Sélectionner une langue",
-    "en": "Anglais",
-    "fr": "Français"
-  }
+  "greeting":"Bonjour le monde!",
+  "records":"Registres",
+  "dashboard":"Tableau de bord",
+  "select a language":"Sélectionner une langue",
+  "en":"Anglais",
+  "fr":"Français"
 }

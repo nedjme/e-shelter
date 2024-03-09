@@ -1,19 +1,38 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "incremental": true,
-      "skipLibCheck": true,
-      "strictNullChecks": true,
-      "noImplicitAny": true,
-      "strictBindCallApply": true,
-      "forceConsistentCasingInFileNames": true,
-      "noFallthroughCasesInSwitch": true,
-      "paths": {
-        "@server/*": ["./apps/server/src/*"],
-        "@client/*": ["./apps/client/*"]
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "strict": true,
+    "baseUrl": ".",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["*"]
+    },
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
       }
-    }
-  }
-  
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/not-found.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

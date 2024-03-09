@@ -16,7 +16,7 @@ export default function UserCard({
   fullName = "test user",
 }: Props) {
   return (
-    <Card className="p-2 m-1 flex flex-row gap-4">
+    <Card className="flex flex-row gap-4 p-2">
       <Avatar>
         <AvatarImage src="https://github.com/shadcn.png" />
         <AvatarFallback>CN</AvatarFallback>

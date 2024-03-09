@@ -1,10 +1,8 @@
 {
-  "Home": {
-    "greeting": "Hello world!"
-  },
-  "Languages": {
-    "select a language": "Select a language",
-    "en": "English",
-    "fr": "French"
-  }
+  "greeting":"Hello world!",
+  "records":"Records",
+  "dashboard":"Dashboard",
+  "select a language":"Select a language",
+  "en":"English",
+  "fr":"French"
 }

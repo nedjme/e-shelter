@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Sidebar } from "@client/components/Sidebar";
+import Header from "@client/components/Header";
 
 type Props = {
   children: React.ReactNode;
@@ -8,9 +9,12 @@ type Props = {
 
 export default function AppLayout({ children }: Props) {
   return (
-    <div className="flex w-screen h-screen flex-row">
-      <Sidebar />
-      <main className="h-full w-full bg-slate-100">{children}</main>
+    <div className="flex flex-col w-screen h-screen">
+      <Header />
+      <div className="flex flex-row h-full">
+        <Sidebar />
+        <main className="w-full h-full p-4 bg-slate-50">{children}</main>
+      </div>
     </div>
   );
 }

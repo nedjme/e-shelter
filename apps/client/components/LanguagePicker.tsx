@@ -11,7 +11,7 @@ import {
 } from "@client/components/ui/select";
 
 const LanguagePicker: React.FC = () => {
-  const tLanguages = useTranslations("Languages");
+  const tLanguages = useTranslations();
   const router = useRouter();
   const pathname = usePathname();
   const baseLocale = useLocale();

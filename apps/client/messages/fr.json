@@ -4,5 +4,18 @@
   "dashboard":"Tableau de bord",
   "select a language":"Sélectionner une langue",
   "en":"Anglais",
-  "fr":"Français"
+  "fr":"Français",
+  "first name":"Prénom",
+  "last name":"Nom de famille",
+  "email":"Courriel",
+  "password":"Mot de passe",
+  "confirm password":"Confirmer le mot de passe",
+  "login":"S'identifier",
+  "register":"S'inscrire",
+  "do you have an account? login":"Avez-vous un compte? S'identifier",
+  "enter your credentials to sign in to your account":"Entrez vos informations d'identification pour vous connecter à votre compte",
+  "don't you have an account? register":"Vous n'avez pas de compte? S'inscrire",
+  "create an account":"Créer un compte",
+  "welcome back":"Bienvenue de retour",
+  "enter your credentials below to create your account":"Entrez vos informations d'identification ci-dessous pour créer votre compte"
 }

@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
+import { Metadata } from "next";
+import { APP_TITLE, APP_DESCRIPTION } from "@client/constants";
 
 type Props = {
   children: ReactNode;
+};
+
+export const metadata: Metadata = {
+  title: APP_TITLE,
+  description: APP_DESCRIPTION,
 };
 
 // Since we have a `not-found.tsx` page on the root, a layout file

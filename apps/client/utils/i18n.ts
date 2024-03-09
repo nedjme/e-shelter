@@ -1,22 +1,16 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
-import {
-  Pathnames,
-  createLocalizedPathnamesNavigation,
-} from "next-intl/navigation";
-
-// Can be imported from a shared config
-export const locales = ["en", "fr"];
-
-export const pathnames = {
-  "/": "/",
-} satisfies Pathnames<typeof locales>;
+import { createLocalizedPathnamesNavigation } from "next-intl/navigation";
+import { pathnames } from "@client/constants/pathnames";
+import { locales } from "@client/constants/locales";
 
 export const { Link, redirect, usePathname, useRouter } =
   createLocalizedPathnamesNavigation({
     locales,
     pathnames,
   });
+
+export type Pathname = keyof typeof pathnames;
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid

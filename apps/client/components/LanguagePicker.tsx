@@ -1,7 +1,7 @@
-"use client";
-
-import { useTranslations, useLocale } from "next-intl";
-
+import { Language } from "@client/types/Language";
+import { locales } from "@client/constants/locales";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@client/utils/i18n";
 import {
   Select,
   SelectContent,
@@ -9,9 +9,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@client/components/ui/select";
-
-import { locales, useRouter, usePathname } from "@client/utils/i18n";
-import { Language } from "@client/types/Language";
 
 const LanguagePicker: React.FC = () => {
   const tLanguages = useTranslations("Languages");

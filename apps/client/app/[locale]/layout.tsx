@@ -5,7 +5,6 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { unstable_setRequestLocale as setRequestLocale } from "next-intl/server";
 
 import "@client/styles/globals.css";
-import AppLayout from "@client/layouts/AppLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +25,7 @@ const LocaleLayout: React.FC<LocalizationProps> = ({
       <body className={inter.className}>
         <TrpcProvider>
           <NextIntlClientProvider messages={messages} locale={locale}>
-            <AppLayout>{children}</AppLayout>
+            {children}
           </NextIntlClientProvider>
         </TrpcProvider>
       </body>

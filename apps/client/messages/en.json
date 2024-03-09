@@ -4,5 +4,19 @@
   "dashboard":"Dashboard",
   "select a language":"Select a language",
   "en":"English",
-  "fr":"French"
+  "fr":"French",
+  "first name":"First Name",
+  "last name":"Last Name",
+  "email":"Email",
+  "password":"Password",
+  "confirm password":"Confirm Password",
+  "login":"Login",
+  "register":"Register",
+  "do you have an account? login":"Do you have an account? Login",
+  "enter your credentials to sign in to your account":"Enter your credentials to sign in to your account",
+  "don't you have an account? register":"Don't you have an account? Register",
+  "create an account":"Create an Account",
+  "welcome back":"Welcome Back",
+  "enter your credentials below to create your account":"Enter your credentials below to create your account"
+
 }
